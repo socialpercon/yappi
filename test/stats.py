@@ -49,7 +49,7 @@ yappi.clear_stats()
 
 yfs = yappi.YFuncStats()
 yfs.add("foo1").add('foobar1')
-yfs.sort(sort_type=yappi.SORTTYPE_TTOT).print_all() 
+yfs.sort(sort_type="totaltime").print_all() 
 yfs.save('callgrind.out', 'callgrind')
 #foobar_stat = yfs.find_by_name('test1')
 #yfs.debug_print()
